@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pelzy | Official Website</title>
+
+  <!-- Font Awesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-x..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    :root {
+      --main-bg: #010a13;
+      --accent: #00bfff;
+      --text-light: #ffffff;
+      --text-muted: #bbbbbb;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--main-bg);
+      color: var(--text-light);
+      overflow-x: hidden;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      text-align: center;
+      background: url('https://files.catbox.moe/gnzgdx.jpg') no-repeat center center;
+      background-size: cover;
+      min-height: 100vh;
+      padding-bottom: 60px;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(1px);
+    }
+
+    .hero-content {
+      z-index: 2;
+      padding: 0 20px;
+    }
+
+    .hero h2 {
+      font-size: 1rem;
+      color: var(--accent);
+      letter-spacing: 2px;
+      margin-bottom: 5px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: var(--text-light);
+      text-shadow: 0 0 10px var(--accent);
+      margin-bottom: 25px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin: 20px 0;
+    }
+
+    .btn {
+      background: var(--accent);
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 0 15px var(--accent);
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #009acc;
+    }
+
+    .waveform {
+      height: 90px;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/5/5f/Sine_wave_animation.gif') no-repeat center/contain;
+      margin-top: 20px;
+      filter: brightness(1.5);
+    }
+
+    .about {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: #020f1c;
+    }
+
+    .about h3 {
+      color: var(--accent);
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    .about p {
+      font-size: 1rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 25px;
+      font-size: 1.5rem;
+    }
+
+    .socials a {
+      color: var(--accent);
+      transition: 0.2s;
+    }
+
+    .socials a:hover {
+      color: white;
+    }
+
+    @media(min-width: 600px) {
+      .buttons {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .btn {
+        font-size: 1.1rem;
+        padding: 14px 28px;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>THE OFFICIAL WEBSITE OF</h2>
+      <h1>PELZY</h1>
+
+      <div class="buttons">
+        <a href="music.html" class="btn"><i class="fa-solid fa-headphones"></i> Stream Music</a>
+        <a href="shop.html" class="btn"><i class="fa-solid fa-store"></i> Visit Shop</a>
+        <a href="contact.html" class="btn"><i class="fa-solid fa-envelope"></i> Contact</a>
+      </div>
+
+      <div class="waveform"></div>
+
+      <div class="socials">
+        <a href="https://instagram.com/pelzy" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com/pelzy" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://tiktok.com/@pelzy" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://twitter.com/pelzy" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <h3>ABOUT PELZY</h3>
+    <p>Pelzy is a bold new voice in music — blending emotion, rhythm, and energy into every song. With a unique sound and a vision for greatness, he's building a legacy beyond borders. Welcome to the movement.</p>
+  </section>
+
+</body>
+  </html>
+  
